@@ -1,6 +1,7 @@
 #ifndef CHATBOT_H_
 #define CHATBOT_H_
 
+#include <iostream>
 #include <wx/bitmap.h>
 #include <string>
 
@@ -29,6 +30,14 @@ public:
 
     //// STUDENT CODE
     ////
+    // Copy constructor
+    ChatBot(const ChatBot &source);
+    //Copy assignment
+    ChatBot &operator=(const ChatBot &source);
+    // Move constructor
+    ChatBot(ChatBot &&source);
+    //Move assignemt
+    ChatBot &operator=(ChatBot &&source);
 
     ////
     //// EOF STUDENT CODE
